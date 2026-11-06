@@ -58,6 +58,20 @@ The system follows a client-server architecture, separating the graphical user i
 ![Order Details - Delivered](docs/screenshots/order-details-delivered.png)
 ![Delivered Order Warning](docs/screenshots/delivered-order-warning.png)
 
+## System and Database Architecture
+
+### System Architecture
+
+The following diagram illustrates the overall structure of the application, including the client, server, business logic, and database components.
+
+![System Architecture](docs/diagrams/system-architecture.png)
+
+### Database Architecture
+
+The following diagram presents the database structure, including the main entities, their attributes, and relationships.
+
+![Database Architecture](docs/diagrams/database-architecture.png)
+
 ## System Architecture
 
 The application consists of three independent Java projects:
