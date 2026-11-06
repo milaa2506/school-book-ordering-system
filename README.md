@@ -24,6 +24,40 @@ The system follows a client-server architecture, separating the graphical user i
   - Large family: 10%
   - School: 15%
 
+## Application Screenshots
+
+### Server and Login
+
+![Server Running](docs/screenshots/server-running.png)
+![Login](docs/screenshots/login.png)
+
+### Order Creation
+
+![Main Order Form](docs/screenshots/main-order-form.png)
+![Order Calculation](docs/screenshots/order-calculation.png)
+
+### Customer Management
+
+![Customer Menu](docs/screenshots/customer-menu.png)
+![Add Customer](docs/screenshots/add-customer.png)
+![Customer Search](docs/screenshots/customer-search.png)
+![Customer Details](docs/screenshots/customer-details.png)
+
+### Book Management
+
+![Book Menu](docs/screenshots/book-menu.png)
+![Add Book](docs/screenshots/add-book.png)
+![Book Search](docs/screenshots/book-search.png)
+![Book Details](docs/screenshots/book-details.png)
+
+### Order Management
+
+![Order Menu](docs/screenshots/order-menu.png)
+![Order Search](docs/screenshots/order-search.png)
+![Order Details - Pending](docs/screenshots/order-details-pending.png)
+![Order Details - Delivered](docs/screenshots/order-details-delivered.png)
+![Delivered Order Warning](docs/screenshots/delivered-order-warning.png)
+
 ## System Architecture
 
 The application consists of three independent Java projects:
@@ -103,42 +137,11 @@ The `knjige.sql` file contains the database creation script, table definitions, 
 
 **Note:** The SQL script contains table deletion and creation statements. Import it into a test database or back up existing data before execution.
 
-## Project Structure
+## Project Organization
 
-```text
-school-book-ordering-system/
-│
-├── KnjigeKlijent/
-│   ├── src/
-│   │   ├── controller/
-│   │   ├── form_kategorija/
-│   │   ├── form_knjiga/
-│   │   ├── form_kupac/
-│   │   ├── form_porudzbina/
-│   │   ├── forme/
-│   │   ├── models/
-│   │   └── session/
-│   └── nbproject/
-│
-├── KnjigeServer/
-│   ├── src/
-│   │   ├── controller/
-│   │   ├── db/
-│   │   ├── forms/
-│   │   ├── so/
-│   │   └── thread/
-│   └── nbproject/
-│
-├── KnjigeZajednicki/
-│   └── src/
-│       ├── domain/
-│       ├── transfer/
-│       └── transfer/util/
-│
-├── knjige.sql
-├── mysql-connector-java-8.0.19.jar
-└── .gitignore
-```
+The application is divided into three Java projects. `KnjigeKlijent` contains the graphical user interface, `KnjigeServer` handles client requests and database operations, while `KnjigeZajednicki` contains classes used by both the client and server.
+
+The repository also includes the `knjige.sql` script for database creation and the `docs/screenshots` directory with screenshots of the application.
 
 ## Installation and Setup
 
@@ -195,10 +198,3 @@ Make sure the MySQL Connector/J library is correctly referenced by the server pr
 
 The client is configured to connect to the server through `localhost` on port `9000`.
 
-## Future Documentation
-
-System architecture and database diagrams will be added to the repository in the `docs/` directory.
-
-## Repository
-
-[GitHub – Book Ordering System for Primary Schools](https://github.com/milaa2506/school-book-ordering-system)
