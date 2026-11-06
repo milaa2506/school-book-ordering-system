@@ -1,0 +1,19 @@
+# NetBeans generated files
+**/build/
+**/dist/
+
+# NetBeans private configuration
+**/nbproject/private/
+
+# Java compiled files
+*.class
+
+# Log files
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Database configuration with credentials
+**/dbconfig.properties
